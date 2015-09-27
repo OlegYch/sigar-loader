@@ -66,7 +66,7 @@ object SigarRepack {
     ("Main-Class", mainClass),
     ("Agent-Class", agentClass),
     ("Premain-Class", agentClass),
-    ("Embedded-Sigar-Origin", hypericRepo.root),
+    ("Embedded-Sigar-Origin", olegychRepo.root),
     ("Embedded-Sigar-Licence", sigarLicence),
     ("Embedded-Sigar-Version", sigarVersion),
     ("Embedded-Sigar-BuildVersion", sigarBuildVersion)

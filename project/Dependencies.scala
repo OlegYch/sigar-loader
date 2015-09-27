@@ -17,10 +17,10 @@ import sbt._
 
 object Dependencies {
 
-  val hypericRepo = "Hyperic Repository" at "http://maven.hyperic.org/external/"
   val typesafeRepo = "TypeSafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
+  val olegychRepo = "OlegYch Repository" at "https://bitbucket.org/olegych/mvn/raw/76c26ec9416296da273451d63430cbfa74d52408"
 
-  val resolutionRepos = Seq(typesafeRepo, hypericRepo)
+  val resolutionRepos = Seq(typesafeRepo, olegychRepo)
 
   /**
    *  Version corresponding to source compatibility.
@@ -47,7 +47,7 @@ object Dependencies {
   val logback = "ch.qos.logback" % "logback-classic" % "1.1.2" // EPL 1.0 / LGPL 2.1
 
   val sigarJar = "org.hyperic" % "sigar-olegych" % sigarBuildVersion // ApacheV2
-  val sigarZip = "org.hyperic" % "sigar-olegych" % sigarBuildVersion artifacts(Artifact("sigar-olegych-windows-8", "zip", "zip", "libs")) // ApacheV2
+  val sigarZip = "org.hyperic" % "sigar-olegych" % sigarBuildVersion artifacts(Artifact("sigar-olegych-freebsd", "zip", "zip", "libs")) // ApacheV2
 
   val junit = "junit" % "junit" % "4.11" // Common Public License 1.0
   val junitInterface = "com.novocode" % "junit-interface" % "0.11" // MIT
